@@ -1,5 +1,5 @@
 export const regionColors: Record<number, string> = {
-  0: "bg-purple-300",
+  0: "bg-purple-400",
   1: "bg-purple-200",
   2: "bg-orange-200",
   3: "bg-lime-200",

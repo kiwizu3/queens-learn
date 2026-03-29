@@ -53,30 +53,30 @@ export default function Home() {
 
         </div>
 
-          <div className="ms-auto">
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setDifficulty("easy")}
-                className={buttonClass(difficulty === "easy")}
-              >
-                Easy
-              </button>
+        <div className="ms-auto">
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setDifficulty("easy")}
+              className={buttonClass(difficulty === "easy")}
+            >
+              Easy
+            </button>
 
-              <button
-                onClick={() => setDifficulty("medium")}
-                className={buttonClass(difficulty === "medium")}
-              >
-                Medium
-              </button>
+            <button
+              onClick={() => setDifficulty("medium")}
+              className={buttonClass(difficulty === "medium")}
+            >
+              Medium
+            </button>
 
-              <button
-                onClick={() => setDifficulty("hard")}
-                className={buttonClass(difficulty === "hard")}
-              >
-                Hard
-              </button>
-            </div>
+            <button
+              onClick={() => setDifficulty("hard")}
+              className={buttonClass(difficulty === "hard")}
+            >
+              Hard
+            </button>
           </div>
+        </div>
 
         <div className="border border-gray-700 rounded-2xl p-4 sm:p-3">
           {puzzle ? (
@@ -89,8 +89,8 @@ export default function Home() {
             <div className="rounded-2xl bg-black p-4">Loading...</div>
           )}
         </div>
- <div className="text-center">
-          <small>Made with <span className="text-red-500">❤︎</span>⁠ by <a href="https://kavinda.vercel.app">Kiwi</a></small>
+        <div className="text-center">
+          <small>Made with <span className="text-red-500">❤︎</span> by <a href="https://kavinda.vercel.app">Kiwi</a></small>
         </div>
       </div>
     </main>

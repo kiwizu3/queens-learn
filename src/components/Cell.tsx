@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import type { CSSProperties } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { CellMark } from "@/types/queens";
 
@@ -10,6 +11,17 @@ type CellProps = {
   softHighlight?: boolean;
 };
 
+const crownMaskStyle: CSSProperties = {
+  WebkitMaskImage: 'url("/icons/crown.svg")',
+  maskImage: 'url("/icons/crown.svg")',
+  WebkitMaskRepeat: "no-repeat",
+  maskRepeat: "no-repeat",
+  WebkitMaskPosition: "center",
+  maskPosition: "center",
+  WebkitMaskSize: "contain",
+  maskSize: "contain",
+};
+
 function CrownIcon({ isMistake }: { isMistake: boolean }) {
   return (
     <span
@@ -17,16 +29,7 @@ function CrownIcon({ isMistake }: { isMistake: boolean }) {
         "relative z-10 block h-7 w-7 sm:h-8 sm:w-8",
         isMistake ? "bg-red-800" : "bg-amber-600"
       )}
-      style={{
-        WebkitMaskImage: 'url("/icons/crown.svg")',
-        maskImage: 'url("/icons/crown.svg")',
-        WebkitMaskRepeat: "no-repeat",
-        maskRepeat: "no-repeat",
-        WebkitMaskPosition: "center",
-        maskPosition: "center",
-        WebkitMaskSize: "contain",
-        maskSize: "contain",
-      }}
+      style={crownMaskStyle}
     />
   );
 }
