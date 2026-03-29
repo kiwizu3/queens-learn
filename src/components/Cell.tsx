@@ -27,7 +27,7 @@ function CrownIcon({ isMistake }: { isMistake: boolean }) {
     <span
       className={clsx(
         "relative z-10 block h-7 w-7 sm:h-8 sm:w-8",
-        isMistake ? "bg-red-800" : "bg-amber-600"
+        isMistake ? "bg-red-800" : "bg-amber-700"
       )}
       style={crownMaskStyle}
     />
